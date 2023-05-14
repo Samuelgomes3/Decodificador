@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+*{
+    background: #F3F5FC;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
