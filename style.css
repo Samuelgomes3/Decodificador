@@ -7,3 +7,81 @@
     margin-left: 40px;
     margin-top: 40px;
 }
+
+main{
+    display: flex;
+}
+
+.container-digite {
+    margin-top: 80px;
+    margin-left: 240px;
+}
+
+.digiteTexto {    
+    width: 680px;
+    height: 288px;
+
+    border-style: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.digiteTexto:focus {
+    outline: none;
+}
+
+.container-digite > p {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    
+    color: #495057;
+}
+
+.container-digite > p > img {
+    margin-right: 8px;
+}
+
+.btn-criptografar {
+    background: #0A3871;
+    color: white;
+
+    width: 300px;
+    height: 60px;
+    border-radius: 24px;
+    padding: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.btn-descriptografar {
+    background: #D8DFE8;
+    color: #0A3871;
+
+    width: 300px;
+    height: 60px;
+    border-radius: 24px;
+    padding: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
