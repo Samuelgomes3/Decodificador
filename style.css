@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
-*{
+body{
     background: #F3F5FC;
 }
 
@@ -15,12 +15,13 @@ main{
 .container-digite {
     margin-top: 80px;
     margin-left: 240px;
+    width: 708px;
 }
 
 .digiteTexto {    
     width: 680px;
     height: 288px;
-
+    background: #F3F5FC;
     border-style: none;
 
     font-family: 'Inter';
@@ -28,6 +29,12 @@ main{
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    color: #0A3871;
+
+
+}
+
+.digiteTexto::placeholder{
     color: #0A3871;
 }
 
@@ -73,6 +80,69 @@ main{
     background: #D8DFE8;
     color: #0A3871;
 
+    width: 300px;
+    height: 60px;
+    border-radius: 24px;
+    padding: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.container-saida {
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+    width: 400px;
+    height: 650px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 32px;
+    box-shadow: 6px 6px 6px rgb(226, 223, 223);
+}
+
+h2 {
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #343A40;
+}
+
+.container-saida > p {
+
+    width: 336px;
+    height: 48px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+ 
+    text-align: center;
+    
+    color: #495057;
+}
+
+.copiar {
+    background: #0A3871;
+    color: white;
+
+    margin-top: 100px;
     width: 300px;
     height: 60px;
     border-radius: 24px;
