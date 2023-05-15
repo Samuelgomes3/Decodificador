@@ -1,11 +1,20 @@
 const digiteTexto = document.querySelector(".digiteTexto");
-const mensagem = document.querySelector(".mensagem");
+const botaoCriptografar = document.querySelector(".btn-criptografar")
+const fundoSemTexto = document.querySelector(".fundo-sem-texto");
 
 // A letra "e" é convertida para "enter"
 // A letra "i" é convertida para "imes"
 // A letra "a" é convertida para "ai"
 // A letra "o" é convertida para "ober"
 // A letra "u" é convertida para "ufat"
+
+console.log(digiteTexto);
+
+function converteTexto(){
+    const textoEncriptado = encriptar(digiteTexto.value);
+    digiteTexto.value = "";
+    fundoSemTexto.innerHTML = "<p>"+textoEncriptado+"</p>";
+}
 
 function encriptar(stringEncriptada) {
 
@@ -20,3 +29,5 @@ function encriptar(stringEncriptada) {
     
     return stringEncriptada;
 }
+
+botaoCriptografar.onclick = converteTexto;

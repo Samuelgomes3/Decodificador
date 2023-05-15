@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Decodificador</title>
 </head>
 <body>
@@ -18,18 +18,20 @@
             <textarea class="digiteTexto" type="text" placeholder="Digite seu texto"></textarea>
             <p><img src="img/Aviso.png" alt=""> Apenas letras minúsculas e sem acento.</p>
             <div class="botoes">
-                <button class="btn-criptografar">Criptografar</button>
+                <button class="btn-criptografar" >Criptografar</button>
                 <button class="btn-descriptografar">Descriptografar</button>
             </div>
 
         </section>
 
         <section class="container-saida">
-                <p class="mensagem"></p>
-                <img src="img/ImgFundoSaida.png" alt="">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-                <button class="copiar">Copiar</button>                
+                <div class="fundo-sem-texto">
+                    <img class="imagem-de-fundo" src="img/ImgFundoSaida.png" alt="">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p class="texto-de-fundo">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>                   
+                <button class="copiar">Copiar</button> 
+                
 
         </section>
     </main>
@@ -37,6 +39,6 @@
     <footer>
         <p>&copy; Desenvolvido por <a href="https://www.linkedin.com/in/samuel-gomes-965a141b4/">Samuel Gomes</a> - 2023</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
