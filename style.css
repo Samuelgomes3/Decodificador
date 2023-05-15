@@ -79,6 +79,7 @@ main{
 .btn-descriptografar {
     background: #D8DFE8;
     color: #0A3871;
+    border: 1px  #0A3871 solid;
 
     width: 300px;
     height: 60px;
