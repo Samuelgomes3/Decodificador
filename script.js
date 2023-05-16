@@ -2,8 +2,7 @@ const digiteTexto = document.querySelector(".digiteTexto");
 const fundoSemTexto = document.querySelector(".fundo-sem-texto");
 const botaoCriptografar = document.querySelector(".btn-criptografar");
 const botaoDesencriptografar = document.querySelector(".btn-descriptografar");
-
-
+const botaoCopiar = document.querySelector(".copiar");
 
 // A letra "e" é convertida para "enter"
 // A letra "i" é convertida para "imes"
@@ -14,15 +13,21 @@ const botaoDesencriptografar = document.querySelector(".btn-descriptografar");
 function btnEncriptar(){
     const textoEncriptado = encriptar(digiteTexto.value);
     digiteTexto.value = "";
-    fundoSemTexto.innerHTML = "<p>"+textoEncriptado+"</p>";
+    fundoSemTexto.innerHTML = "<p class='texto'>"+textoEncriptado+"</p>";
 }
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(digiteTexto.value);
     digiteTexto.value = "";
-    fundoSemTexto.innerHTML = "<p>"+textoDesencriptado+"</p>";
+    fundoSemTexto.innerHTML = "<p class='texto'>"+textoDesencriptado+"</p>";
+    textoCopiado = textoDesencriptado
 }
 
+function btnCopiar() {
+    var textoParaCopiar = document.querySelector(".texto").textContent;
+    navigator.clipboard.writeText(textoParaCopiar);
+    
+}
 
 function encriptar(stringEncriptada) {
 
@@ -54,3 +59,4 @@ function desencriptar(stringDesencriptada) {
 
 botaoCriptografar.onclick = btnEncriptar;
 botaoDesencriptografar.onclick = btnDesencriptar;
+botaoCopiar.onclick = btnCopiar;
